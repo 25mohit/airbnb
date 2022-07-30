@@ -1,0 +1,26 @@
+.header-menu-bar-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+    box-sizing: border-box;
+            .header_menu_bar-options{
+                display: flex;
+                margin-top: 0.6rem;
+                flex-direction: column;
+                justify-content: space-evenly;
+                width: fit-content;
+                        .header_menu_bar-icon{
+                            font-size: 1.7rem;
+                            color: rgb(158, 158, 158);
+                        }
+                        .header_menu_bar-option{
+                            color: rgb(158, 158, 158);
+                            font-size: 0.8rem;
+
+                        }
+                        &:hover{
+                            cursor: pointer;
+                        }
+            }
+}

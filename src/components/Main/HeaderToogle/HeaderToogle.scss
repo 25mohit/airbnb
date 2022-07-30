@@ -1,0 +1,40 @@
+.header-toogle-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #DDDDDD;
+    border-radius: 40px;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 5%);
+    transition: box-shadow 0.2s ease;
+    padding:0.7rem 1.5rem;
+    box-sizing: border-box;
+    position: relative;
+        .header_toogle-option{
+            display: flex;
+            align-items: center;
+            padding: 0 0.7rem;
+            justify-content: space-between;
+                .header_toogle_option-text{
+                        color: gray ; 
+                        user-select: none;
+                        &:hover{
+                            cursor: pointer;
+                        }
+                }   
+                #header_toogle-search-icon{
+                    position: absolute;
+                    right: 0.6rem;
+                    padding: 0.4rem;
+                    border-radius: 50%;
+                    color: white;
+                    background-color: #FF385C;
+                }
+        }
+        .header_toogle-option:nth-child(3){
+            padding-right: 1.6rem;
+        }
+}
+.center{
+    border-left: 1px solid #DDDDDD;
+    border-right: 1px solid #DDDDDD;
+}
