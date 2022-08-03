@@ -4,6 +4,7 @@ import bnbLogo from '../../Assests/Properties/BnbLogo.png'
 import UserControls from '../UserControls/UserControls'
 
 const Header = (props) => {
+
   return (
     <div className='header-main'>
             <div className="header-logo">
@@ -11,6 +12,7 @@ const Header = (props) => {
             </div>
             <HeaderToogle changeOption={ props.changeOption } currentOption={ props.currentOption } />
             <UserControls />
+           
     </div>
   )
 }

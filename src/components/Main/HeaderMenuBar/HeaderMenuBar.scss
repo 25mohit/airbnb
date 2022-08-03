@@ -4,23 +4,50 @@
     justify-content: space-between;
     padding: 1rem 5rem;
     box-sizing: border-box;
+    max-width: 100%;
+    overflow: auto;
+    gap: 8px;
+    border-top: 1px solid rgba(200, 200, 200,0.3);
+    border-bottom: 1px solid rgba(200, 200, 200,0.3);
             .header_menu_bar-options{
                 display: flex;
-                margin-top: 0.6rem;
                 flex-direction: column;
-                justify-content: space-evenly;
-                width: fit-content;
+                justify-content: center;
+                align-items: center;
+                margin-top: 0.6rem;
+                width: 7rem;
+                &:hover{
+                    cursor: pointer;
+                }
                         .header_menu_bar-icon{
                             font-size: 1.7rem;
-                            color: rgb(158, 158, 158);
+                            color: rgba(98, 98, 98,0.9);
+                            // &:hover{
+                            //     color: black;
+                            //     transition: 0.6s;
+                            // }
                         }
                         .header_menu_bar-option{
-                            color: rgb(158, 158, 158);
+                            color: rgba(98, 98, 98,0.9);
                             font-size: 0.8rem;
-
-                        }
-                        &:hover{
-                            cursor: pointer;
+                            margin-top: 0.3rem;
+                            font-weight: 500;
+                            // &:hover{
+                            //     color: black;
+                            //     transition: 0.6s;
+                            // }
                         }
             }
+}
+#selectedOpt{
+    text-decoration: underline;
+    text-underline-offset: 0.9rem;
+    text-decoration-thickness: 3px;
+    .header_menu_bar-icon{
+        color: black;
+    }
+    .header_menu_bar-option{
+        color: black;
+        font-weight: bold;
+    }
 }
